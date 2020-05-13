@@ -1,7 +1,7 @@
 require 'csv'
 require "./queue_simulation.rb"
 
-file_name = "./sample-data.csv"
+file_name = "./datasets/sample-data.csv"
 data = CSV.read(file_name).map { |d| d[0].to_i }
 puts "Total increments #{data.count}"
 qs = QueueSimulation.new(ingress_data: data)
