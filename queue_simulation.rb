@@ -32,10 +32,6 @@ class QueueSimulation
 
   def simulate
     queue = BucketedQueue.new
-    # For each time increment:
-    # egress anything currently in queue, starting with oldest bucket and capturing its wait time bucket in the histo
-    # ingress new entries - remaining egress into the 0 bucket
-    # increment each bucket still in the queue
     time_increments.times do |time_increment|
       ingress_amount = ingress(time_increment)
       egress_amount = egress(time_increment)
