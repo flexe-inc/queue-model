@@ -15,7 +15,7 @@ qs = QueueSimulation.new(ingress_data: data, ingress_multiplier: 3)
 pp qs.simulate
 
 puts "base data x5 in"
-qs = QueueSimulation.new(ingress_data: data, ingress_multiplier: 3)
+qs = QueueSimulation.new(ingress_data: data, ingress_multiplier: 5)
 pp qs.simulate
 
 puts "base data x10"
@@ -29,7 +29,7 @@ qs = QueueSimulation.new(ingress_data: data, ingress_multiplier: 3, egress_rate:
 pp qs.simulate
 
 puts "base data x5 in x4 out"
-qs = QueueSimulation.new(ingress_data: data, ingress_multiplier: 3, egress_rate: 2000)
+qs = QueueSimulation.new(ingress_data: data, ingress_multiplier: 5, egress_rate: 2000)
 pp qs.simulate
 
 puts "base data x10 in x4 out"
