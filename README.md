@@ -16,10 +16,14 @@ You have a queue work items go into.  It's modeled as follows:
 1. Using the ingress dataset, we walk through each time increment: ingress, egress, then increment time-in-queue for everything still there.
 1. As we egress, we track what the maximum time-in-queue of any egressed item was
 
+After we get through the full input data set we report the maximum time any item spent in the queue.
+
 
 # Running it
-ruby run_simulations.rb
+Example code for running simulations can be run from here:
 
-# Todo - accept some command line params for run simulations; for now you can modify the code with the parameters of interest
-# Todo - make it possible for the step function to model exponential and/or linear backoff
-# Todo - provide more sophisticated statistics than max-time-in-queue
+`ruby run_simulations.rb`
+
+ - Todo - accept some command line params for run simulations; for now you can modify the code with the parameters of interest
+ - Todo - make it possible for the step function to model exponential and/or linear backoff
+ - Todo - provide more sophisticated statistics than max-time-in-queue
