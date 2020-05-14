@@ -1,6 +1,8 @@
 # queue-model
 Tools for modeling latencies in delayed job queues.
 
+It's possible someone who understands queue theory better than  I can replace all of this code with a single math function implementation.
+
 NB: This is a public repository; don't commit properietary information to it.
 
 The general idea is:
