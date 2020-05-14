@@ -21,7 +21,7 @@ class BucketedQueue
     removed_quantities = {}
 
     while(remaining_to_remove > 0 && bucket_keys.count > 0) do
-      last_bucket_key = current_buckets.keys.max
+      last_bucket_key = bucket_keys.last
 
       last_bucket = bucket_at(last_bucket_key)
       num_removed = last_bucket.remove(remaining_to_remove)

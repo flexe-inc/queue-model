@@ -37,9 +37,9 @@ describe BucketedQueue do
   describe "with buckets at 1, 2, and 5" do
     before do
       @queue = BucketedQueue.new({
-                             1 => BucketedQueueBucket.new(10),
-                             2 => BucketedQueueBucket.new(6),
-                             5 => BucketedQueueBucket.new(2)
+                             1 => QueueBucket.new(10),
+                             2 => QueueBucket.new(6),
+                             5 => QueueBucket.new(2)
                          })
     end
 
